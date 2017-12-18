@@ -10,7 +10,7 @@
 </head>
 <body background=assets/images/background-image.png>
     
-<h1>Crystals Collector</h1>
+<h1>Crystals Collector!</h1>
 
 <h2>How to Play the Game</h2>
 
@@ -26,23 +26,12 @@
 </div>
 
 <div class="number-container">
-    <div class="random-number">
-    </div>
+    <div class="random-number"></div>
 
     <div class="winsandlosses">
         <p id="wins"> WINS: </p>
         <p id="losses"> LOSSES: </p>
     </div>
-
-    <!-- <div class="total">
-        <p id="total-score"> Your Total Score Is:</p>
-    </div>
-
-    <div class="users-score">
-            <span class="score"> 0 </span>
-    </div> -->
-
-  
 </div>
 
 <div class="crystal-container">
@@ -75,7 +64,7 @@
    var wins = 0;
    var losses = 0;
    var counter = 0;
-   var score = 0;
+   
 
    var randomNumber = Math.floor(Math.random() * 120) + 19;
 		$(".random-number").text(randomNumber);
@@ -86,6 +75,7 @@
         $(".random-number").text(randomNumber);
         crystal1=1;
         counter=0;
+     
         randomizeNumbers();
     }      
 
